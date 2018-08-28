@@ -1,0 +1,514 @@
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[         0,          0]
+NotebookDataLength[     18193,        513]
+NotebookOptionsPosition[     17392,        479]
+NotebookOutlinePosition[     17747,        495]
+CellTagsIndexPosition[     17704,        492]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{"List", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", 
+       RowBox[{"2", " ", 
+        RowBox[{"IsotopeData", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"1", ",", "2"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+         "]"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "12", ",", 
+       RowBox[{"12", " ", 
+        RowBox[{"IsotopeData", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"6", ",", "12"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+         "]"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"12", ",", "24", ",", 
+       RowBox[{"24", " ", 
+        RowBox[{"IsotopeData", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"12", ",", "24"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+         "]"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"24", ",", "53", ",", 
+       RowBox[{"53", " ", 
+        RowBox[{"IsotopeData", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"24", ",", "53"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+         "]"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"29", ",", "63", ",", 
+       RowBox[{"63", " ", 
+        RowBox[{"IsotopeData", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"29", ",", "63"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+         "]"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"36", ",", "84", ",", 
+       RowBox[{"84", " ", 
+        RowBox[{"IsotopeData", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"36", ",", "84"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+         "]"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"42", ",", "98", ",", 
+       RowBox[{"98", " ", 
+        RowBox[{"IsotopeData", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"42", ",", "98"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+         "]"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"74", ",", "184", ",", 
+       RowBox[{"184", " ", 
+        RowBox[{"IsotopeData", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"74", ",", "184"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+         "]"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"80", ",", "200", ",", 
+       RowBox[{"200", " ", 
+        RowBox[{"IsotopeData", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"80", ",", "200"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+         "]"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"92", ",", "238", ",", 
+       RowBox[{"238", " ", 
+        RowBox[{"IsotopeData", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"92", ",", "238"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+         "]"}]}]}], "}"}]}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"b", "=", 
+  RowBox[{"List", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"2", ",", " ", 
+      RowBox[{"IsotopeData", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", "2"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+       "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"12", ",", 
+      RowBox[{"IsotopeData", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"6", ",", "12"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+       "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"24", ",", 
+      RowBox[{"IsotopeData", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"12", ",", "24"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+       "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"53", ",", 
+      RowBox[{"IsotopeData", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"24", ",", "53"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+       "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"63", ",", 
+      RowBox[{"IsotopeData", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"29", ",", "63"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+       "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"84", ",", 
+      RowBox[{"IsotopeData", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"36", ",", "84"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+       "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"98", ",", 
+      RowBox[{"IsotopeData", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"42", ",", "98"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+       "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"184", ",", 
+      RowBox[{"IsotopeData", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"74", ",", "184"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+       "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"200", ",", 
+      RowBox[{"IsotopeData", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"80", ",", "200"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+       "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"238", ",", 
+      RowBox[{"IsotopeData", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"92", ",", "238"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+       "]"}]}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"ListPlot", "[", "b", "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{3.670717321054031*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", 
+     TemplateBox[{
+      "2.224566`7.","\"MeV\"","megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "12", ",", 
+     TemplateBox[{
+      "92.16172800000000000000000000000000000002`7.","\"MeV\"",
+       "megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"12", ",", "24", ",", 
+     TemplateBox[{
+      "198.25701599999999999999999999999999999997`7.","\"MeV\"",
+       "megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"24", ",", "53", ",", 
+     TemplateBox[{
+      "464.28821499999999999999999999999999999995`7.","\"MeV\"",
+       "megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"29", ",", "63", ",", 
+     TemplateBox[{
+      "551.38444199999999999999999999999999999995`7.","\"MeV\"",
+       "megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"36", ",", "84", ",", 
+     TemplateBox[{
+      "732.25714799999999999999999999999999999992`7.","\"MeV\"",
+       "megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"42", ",", "98", ",", 
+     TemplateBox[{
+      "846.24225`7.","\"MeV\"","megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"74", ",", "184", ",", 
+     TemplateBox[{
+      "1472.93600800000000000000000000000000000017`7.","\"MeV\"",
+       "megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"80", ",", "200", ",", 
+     TemplateBox[{
+      "1581.17980000000000000000000000000000000013`7.","\"MeV\"",
+       "megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"92", ",", "238", ",", 
+     TemplateBox[{
+      "1801.68855999999999999999999999999999999979`6.","\"MeV\"",
+       "megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.6707173258359957`*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", 
+     TemplateBox[{
+      "1.112283`7.","\"MeV\"","megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"12", ",", 
+     TemplateBox[{
+      "7.680144`7.","\"MeV\"","megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"24", ",", 
+     TemplateBox[{
+      "8.260709`7.","\"MeV\"","megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"53", ",", 
+     TemplateBox[{
+      "8.760155`7.","\"MeV\"","megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"63", ",", 
+     TemplateBox[{
+      "8.752134`7.","\"MeV\"","megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"84", ",", 
+     TemplateBox[{
+      "8.717347`7.","\"MeV\"","megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"98", ",", 
+     TemplateBox[{
+      "8.635125`7.","\"MeV\"","megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"184", ",", 
+     TemplateBox[{
+      "8.005087`7.","\"MeV\"","megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"200", ",", 
+     TemplateBox[{
+      "7.905899`7.","\"MeV\"","megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"238", ",", 
+     TemplateBox[{
+      "7.57012`6.","\"MeV\"","megaelectronvolts","\"Megaelectronvolts\""},
+      "Quantity"]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.6707173258566017`*^9}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
+      AbsoluteThickness[1.6], 
+     PointBox[{{2., 1.112283}, {12., 7.680144}, {24., 8.260709}, {53., 
+      8.760155}, {63., 8.752134}, {84., 8.717347}, {98., 8.635125}, {184., 
+      8.005087}, {200., 7.905899}, {238., 7.57012}}]}, {}}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 5.648946200000002},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{},
+  PlotRange->{{0, 238.}, {5.797099000000001, 8.760155}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{3.670717325985499*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fitted", "=", 
+  RowBox[{"Fit", "[", 
+   RowBox[{"data", ",", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", 
+      SuperscriptBox["a", 
+       RowBox[{"2", "/", "3"}]], ",", 
+      FractionBox[
+       RowBox[{"z", " ", 
+        RowBox[{"(", 
+         RowBox[{"z", "-", "1"}], ")"}]}], 
+       SuperscriptBox["a", 
+        RowBox[{"1", "/", "3"}]]], ",", 
+      FractionBox[
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"a", "-", 
+          RowBox[{"2", " ", "z"}]}], ")"}], "2"], "a"]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"z", ",", "a"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6707173309746037`*^9, 3.670717365243383*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"a", "-", 
+       RowBox[{"2", " ", "z"}]}], ")"}], "2"], " ", 
+    RowBox[{"(", 
+     TemplateBox[{
+      RowBox[{"-", "26.75041892803589`"}],"\"MeV\"","megaelectronvolts",
+       "\"Megaelectronvolts\""},
+      "Quantity"], ")"}]}], "a"], "+", 
+  RowBox[{
+   SuperscriptBox["a", 
+    RowBox[{"2", "/", "3"}]], " ", 
+   RowBox[{"(", 
+    TemplateBox[{
+     RowBox[{"-", "15.751627359496412`"}],"\"MeV\"","megaelectronvolts",
+      "\"Megaelectronvolts\""},
+     "Quantity"], ")"}]}], "+", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "1"}], "+", "z"}], ")"}], " ", "z", " ", 
+    RowBox[{"(", 
+     TemplateBox[{
+      RowBox[{"-", "0.591989242610756`"}],"\"MeV\"","megaelectronvolts",
+       "\"Megaelectronvolts\""},
+      "Quantity"], ")"}]}], 
+   SuperscriptBox["a", 
+    RowBox[{"1", "/", "3"}]]], "+", 
+  RowBox[{"a", " ", 
+   RowBox[{"(", 
+    TemplateBox[{
+     "14.855928113894423`","\"MeV\"","megaelectronvolts",
+      "\"Megaelectronvolts\""},
+     "Quantity"], ")"}]}]}]], "Output",
+ CellChangeTimes->{3.67071736565197*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ContourPlot", "[", 
+  RowBox[{"fitted", ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", "1", ",", "92"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "1", ",", "238"}], "}"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "1"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.670717507599422*^9, 3.670717561733995*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[GraphicsComplexBox[CompressedData["
+1:eJxllQtMU2cUx4uzAcUlvDTgkJWuShCYYAvrwJYDlECF4oVSC5tUREDLWmSg
+mM3xqKKyKCbIYI49km1mbiyg4GDIQx7TTUmmbEtkIoYhZhEXnOExMBi7U9ve
+7dw2aZpf/+d8/3/u993v+OfsS8tbxuPx2vBr+bV+/OBOh/FOx3QYEDbG2DiY
+cqXEQU88LVKevq9kdcK8KMr9wNFt64ek0vXtjP2EsZ/qCsqQ4LCexU6k17Dr
+Ecb1qK6gjOsRrtzK6VdxdAkoLX+czWT9CKMf1RWU0Y8w+tF+FUdnKAvSHPyf
+//yRxfoTRn/C6E8Y/Wm/iqMzlNGf1qs5frb9fHEXm4ewfT/tbN9PO2Me2q/i
+6AxlzEPr1ZSzNRx/LYej4PlxD9rN5iWMeQljXsKYl/arODpDGfPSejVlzEv9
+tQ75ai3nUZnH5iOM+QhjPsKYj+oMZcxH69WUMR/113LqAQyWB5y/h81HGPMR
+xnyEMR/VGcqYj9arKWM+6q91yJNgeX+q9GwewpiHMOahOkMZ89B6NWXMQxjz
+UFaA0PL4vniLzUMY8xDGPFRnKGMeWq+mjHkIYx6uv7XPyPoTtt8PrM5Qtt8P
+bL2acraGMvpTdrfNK6GVQ7dbz1ergWVuP9F5fFu/l5XPbLfOI+l/9YTPcNfz
+g0+HFiZ+NYVB52eD015CL3Z+uocp4v/eGcjyesGT+qsevg7zsr/OPblvUGx7
+PhI4yJf9s/yEHCrCQ6sfDbzOqfeDuc6dsXrvOOg5IhlvVYgc5mvEuSu6msJY
+W04A0x6+RlOaAH1Z6W4dK+LY+qaec7XtHwY6zM/7l7P2O5UkWRn3d9F53b3v
+/Bjwl99yTXJWcuqDQdgtlkk3qqG3LCmjPWqTw3w8sPBzzbjOvs8qOKCsuJt/
+Ph2ulz9t50+msPXF37fJG/WbHebZPR9zfKu/bd/xvEzkbjg8mZMJ722UFs8w
+nPmGz08e0+U9tCILcuplR95YHW79/3/zx8Nt6zOB+U0o8Em8XLhGw+pDO1I/
+yJt9zWEeFGlfGrySqWPPwy/a8f6z72bD6NF9Lh6NkZz7NwqWZOeXG8t2g94z
+/xtzsYy97wy3e6faVnPuO9yfJ7kZp8ZK90Jic1D0RGkM+75/NOOWeGI0lvP+
+KaCvZP/VsRIjXChLul0hVrDn8Vph07qA9Wsh8njSjuJgAA/Ttb8MtSHw04Pj
+viWLYiiaixvbJdkCFz2alpTmWBiSydP8DAEwF1s0W5C9DVxuCspvusdDTOAP
+zS3NyaDXeZZVJSTDoikoZ7JcDUXmxsrur0Lhoupkg9srWnCddxrIvZsKhk1G
+77ULGRAww3u5/2A4PDgkyt5m0oH52N6Id65roHJh5FbrjA7Kvh5+2KCMhKOP
+Q02uj3NgvnL60beCaBjg30gQfZ4Pv61qlX45HwMvHBatCUkpgGeXJt5uCXCH
+xdDSmpVdQujdUicpCFoFwgrjw+pLG2Dw/Y9bZlc60/cf74O64ajf/5QLYXhK
+nLKs52n0VOdmcUi9C4i6D434y/ngmu6VcuMTL7jwqm/k6I9OIKg+KZUKfKAn
+YqS+vGEpmtwHeD90lQ5XnVryhH8BURxOPA==
+   "], 
+   {RGBColor[0.148, 0.33, 0.54], EdgeForm[None], 
+    GraphicsGroupBox[{PolygonBox[CompressedData["
+1:eJwNw4VOlAEAAGC47u7+rzu4Dq67O7j+j7g7OO4OnAzdkKEbMnTqxOFwdhcK
+7+L7yLd9ADgtgpCFhYV/N6E39yB3cUgUHAJlEkmH6AcIKIyIxlDxBLUIIGNx
+FByehMFiEUgMHMEikcVsjojJ4lJpKX9AzheohCIZj88mUzSAmEOhSjhcKZen
+FUsCNnvQ7tBLZR6jySCTW1Vqm1pj12gdWh2ZzbIoVU6d3m0wuvQGgMU2yhXL
+piWfxXpmfuG32kIOZ9jpirjcUbfHa7boJNKYZznp8ye8Ph6NLmQwTxiP85Ho
+efxlIRpr5PK5cKQYT5QSyVomu5Iv1LO5cjJVSaWr6UyrWFprtQeNlW6l2q/V
+O+UKWG9cNF9lgqHVZqtdKq+3Oxud7rDb61Vro15/Ohncge3fXryFwGKgCDgM
+iYBj0O/QhxQO+zVkLx0I3kMdZEPhcR9chEKQOCyGRMRRyFgyCYXH3Scc4akU
+Ao36kXHya+snkcl4SD8msZhXs79ULkeq19H5vKeKJ0yRkAWIHglO2WKAK5Xw
+ZFK+XCZQyDkS8WflM6FKKVKr5EaDWKsZTEBAo5YZ9AqTMVOrfjWfaew2pcWs
+slrUNqvWYdc5HcFM2hOLGj1ui89rcLusfp8t4LcHA85wyLTscUXCjlDQHY1I
+dFq9y+lLJryJeCCdCmUz/lQynMtG8rloIZ8sl77Fz1OVcqJUTFcrNB73cnaV
+X2l8b178mV13NtaLrWa50650O9Ve9/nSl1q/11pbba+vldqtbL12TP9QB/un
+gk+NAdgdbvTHo/n2ZB/2ZjIGJ9vjA9Tbnfm0NxrmGvUjwvvd+eZ0PrmeXc53
+Nn9s/Z7vbv8Hj2amaw==
+       "]], 
+      PolygonBox[{{173, 108, 112, 175}, {176, 112, 108, 172}, {142, 31, 40, 
+       165}, {132, 9, 15, 133}, {152, 72, 82, 153}, {166, 50, 49, 146}, {155, 
+       91, 100, 156}, {159, 8, 7, 125}, {141, 22, 31, 142}, {149, 51, 62, 
+       150}, {120, 3, 1, 118}, {124, 5, 9, 160}, {129, 13, 8, 127}, {125, 7, 
+       4, 122}, {117, 1, 2, 157}, {123, 2, 5, 124}, {158, 4, 3, 120}, {133, 
+       15, 22, 163}, {146, 49, 39, 144}, {138, 29, 21, 136}, {143, 39, 30, 
+       140}, {145, 40, 51, 167}, {134, 20, 14, 131}, {162, 21, 20, 134}, {164,
+        30, 29, 138}, {153, 82, 91, 169}, {161, 14, 13, 129}, {116, 1, 108, 
+       170}, {150, 62, 72, 168}, {171, 108, 1, 117}}]}]}],
+  AspectRatio->1,
+  DisplayFunction->Identity,
+  Frame->True,
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{"DefaultBoundaryStyle" -> Automatic},
+  PlotRange->{{1, 92}, {1, 238}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {0, 0}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{3.670717562591482*^9}]
+}, Open  ]]
+},
+WindowSize->{808, 590},
+WindowMargins->{{169, Automatic}, {Automatic, 36}},
+FrontEndVersion->"10.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 29, \
+2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[422, 15, 5705, 160, 403, "Input"],
+Cell[6130, 177, 2246, 61, 79, "Output"],
+Cell[8379, 240, 1798, 53, 79, "Output"],
+Cell[10180, 295, 1061, 27, 247, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11278, 327, 681, 21, 52, "Input"],
+Cell[11962, 350, 1174, 39, 54, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13173, 394, 388, 10, 28, "Input"],
+Cell[13564, 406, 3812, 70, 405, "Output"]
+}, Open  ]]
+}
+]
+*)
+
